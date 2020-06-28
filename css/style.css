@@ -2018,3 +2018,12 @@ ul.bottom_menu li {
 .redes-sociales .list-group-item{
 	padding: 8px 9px !important;
 }
+
+.logo-img{
+	border-radius:20px;
+}
+
+.display-list-implentation p{
+    margin-left: 1rem;
+    font-size: 11px;
+}
