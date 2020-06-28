@@ -167,6 +167,22 @@ button:focus {
 }
 
 
+.slider-line{
+	width: 100%;
+	display: inline-flex;
+}
+
+.slider-line img{
+	width: 50%;
+	height: auto;
+	margin-top: -100px;
+}
+
+.slider-line ul{
+	width: 50%;
+	min-width: 400px;
+}
+
 /*------------------------------------------------------------------ 
    LOADER 
 -------------------------------------------------------------------*/
@@ -358,12 +374,19 @@ a.navbar-brand {
 	position: relative;
 }
 
-.top-header .navbar .navbar-collapse ul li a.active {}
+a.navbar-brand img {
+	width: 140px;
+}
+
+.top-header .navbar .navbar-collapse ul li a.active {
+	color: #e38c32;
+	font-weight: bold;
+}
 
 .top-header .navbar .navbar-collapse ul li a:hover,
 .top-header .navbar .navbar-collapse ul li a:focus {
 	background: transparent;
-	color: #f2184f;
+	color:  black;
 }
 
 .search_icon.nav-link img {
@@ -376,6 +399,7 @@ a.navbar-brand {
 
 .top-header.fixed-menu {
 	width: 100%;
+	height: 90px;
 	position: fixed;
 	box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
 	-webkit-animation-duration: 1s;
@@ -389,7 +413,7 @@ a.navbar-brand {
 }
 
 .navbar-toggler {
-	border: 2px solid #f43866;
+	border: 2px solid #e38c32;
 	border-radius: 0;
 	margin: 15px 15px;
 	padding: 8px 8px;
@@ -400,7 +424,7 @@ a.navbar-brand {
 }
 
 .navbar-toggler span {
-	background: #f43866;
+	background: #e38c32;
 	display: block;
 	width: 22px;
 	height: 2px;
@@ -421,11 +445,11 @@ a.navbar-brand {
 }
 
 .navbar-toggler:hover {
-	border: 2px solid #f43866;
+	border: 2px solid #e38c32;
 }
 
 .navbar-toggler:hover span {
-	background: #f43866;
+	background: #e38c32;
 }
 
 
@@ -447,6 +471,7 @@ a.navbar-brand {
 
 .top-header #navbar-wd {
 	padding-right: 100px;
+	margin-top: -60px;
 }
 
 .search-btn {
@@ -476,7 +501,7 @@ a.navbar-brand {
 }
 
 .theme_color {
-	color: #f2184f;
+	color:  black;
 }
 
 
@@ -573,7 +598,7 @@ a.navbar-brand {
 }
 
 .pogoSlider-nav-btn--selected {
-	background: #f2184f !important;
+	background:  black !important;
 }
 
 .pogoSlider--navBottom .pogoSlider-nav {
@@ -605,7 +630,7 @@ a.navbar-brand {
 }
 
 .slide_text p {
-    color: #f2184f;
+    color:  black;
     font-size: 20px;
     font-weight: 300;
     padding-top: 0;
@@ -616,7 +641,7 @@ a.navbar-brand {
 .contact_bt {
     width: 180px;
     height: 50px;
-    background: #f2184f;
+    background:  black;
     color: #fff;
     float: left;
     line-height: 50px;
@@ -637,7 +662,7 @@ a.navbar-brand {
 }
 
 .slide_text {
-    margin-top: 220px;
+    margin-top: 150px;
     padding-left: 80px;
 }
 
@@ -794,7 +819,7 @@ a.navbar-brand {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #f43866;
+	background: #e38c32;
 	border-radius: 100%;
 	-webkit-transform: scale(0);
 	transform: scale(0);
@@ -1212,7 +1237,7 @@ figure.effect-service:hover {
 /*------------------------------------------------------------------ counter ----------------------------------------------------------------*/
 
 h2.timer.count-title.count-number {
-    color: #f43866;
+    color: #e38c32;
     font-size: 60px;
     font-weight: 600;
     margin: 0;
@@ -1221,7 +1246,7 @@ h2.timer.count-title.count-number {
 }
 
 p.count-text {
-    color: #f43866;
+    color: #e38c32;
     font-size: 22px;
     font-weight: 600;
     line-height: 20px;
@@ -1270,7 +1295,7 @@ p.count-text {
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    background: rgba(244,56,102,0.7);
+    background: rgba(227, 140, 50, 0.7);
 	opacity:0;
 	transition: ease all 0.2s;
 }
@@ -1475,7 +1500,7 @@ p.count-text {
 	margin-right: 15px;
 	color: #fff;
 	border-radius: 100%;
-	background: #f2184f;
+	background:  black;
 }
 
 .dit-right h4 {
@@ -1518,7 +1543,7 @@ p.count-text {
 }
 
 .submit-button .btn-common {
-	background-color: #f2184f;
+	background-color:  black;
 	height: 45px;
 	line-height: 45px;
 	font-size: 14px;
@@ -1752,6 +1777,10 @@ p.section_count {
 	padding: 0;
 }
 
+.footer-box .icon{
+	width: 40px;
+}
+
 .full {
 	float: left;
 	width: 100%;
@@ -1785,7 +1814,7 @@ h3.small_heading {
 }
 
 .carousel a.carousel-control-prev {
-    background: #f43866;
+    background: #e38c32;
     opacity: 1;
     width: 50px;
     height: 50px;
@@ -1795,7 +1824,7 @@ h3.small_heading {
 }
 
 .carousel a.carousel-control-next {
-	background: #f43866;
+	background: #e38c32;
 	opacity: 1;
 	width: 50px;
 	height: 50px;
@@ -1894,7 +1923,7 @@ ul.social_icon li {
 }
 
 .newsletter_form button {
-    background: #f43866;
+    background: #e38c32;
     color: #fff;
     border: none;
     font-size: 14px;
@@ -1910,7 +1939,7 @@ footer.footer-box p {
 
 .footer_blog {
     float: left;
-    width: 50%;
+    width: 100%;
 }
 
 ul.bottom_menu li a {
@@ -1968,4 +1997,24 @@ ul.bottom_menu li {
 .top-header.fixed-menu ul li:hover a,
 .top-header.fixed-menu ul li:focus a {
 	color: #0892fd !important;
+}
+
+.redes-sociales{
+	opacity: 1;
+	position: fixed;
+	top: 150px;
+	right: 0;
+	cursor: pointer;
+	z-index: 1000;
+	transition: opacity .5s, background-color .5s;
+	-moz-transition: opacity .5s, background-color .5s;
+	-webkit-transition: opacity .5s, background-color .5s;
+}
+
+.redes-sociales img{
+	width: 40px !important;
+}
+
+.redes-sociales .list-group-item{
+	padding: 8px 9px !important;
 }
