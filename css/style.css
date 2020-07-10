@@ -1530,10 +1530,10 @@ p.count-text {
 .contact-block {}
 
 .contact-block .form-group .form-control {
-	background: #333;
+	background: white;
 	height: 48px;
 	font-size: 14px;
-	border: 0;
+	border: 1px solid black;
 	padding: 5px 20px;
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -1835,6 +1835,11 @@ h3.small_heading {
 
 #demo {
 	margin-bottom: 20px;
+}
+
+#demo  img{
+	height: 100%;
+	object-fit: cover;
 }
 
 ul.social_icon li a {

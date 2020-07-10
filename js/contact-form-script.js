@@ -2,7 +2,7 @@ $("#contactForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         formError();
-        submitMSG(false, "Did you fill in the form properly?");
+        submitMSG(false, "Podrias completar los campos porfavor?");
     } else {
         // everything looks good!
         event.preventDefault();
@@ -18,20 +18,23 @@ function submitForm(){
     var msg_subject = $("#msg_subject").val();
     var message = $("#message").val();
 
+    console.log('name',name);
+    console.log('email', email);
 
-    $.ajax({
-        type: "POST",
-        url: "php/form-process.php",
-        data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
-        success : function(text){
-            if (text == "success"){
-                formSuccess();
-            } else {
-                formError();
-                submitMSG(false,text);
-            }
-        }
-    });
+
+    // $.ajax({
+    //     type: "POST",
+    //     url: "php/form-process.php",
+    //     data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
+    //     success : function(text){
+    //         if (text == "success"){
+    //             formSuccess();
+    //         } else {
+    //             formError();
+    //             submitMSG(false,text);
+    //         }
+    //     }
+    // });
 }
 
 function formSuccess(){
